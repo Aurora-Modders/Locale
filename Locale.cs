@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Threading;
 using System.Globalization;
-using System.Collections.Generic;
-
-using HarmonyLib;
 
 namespace Locale
 {

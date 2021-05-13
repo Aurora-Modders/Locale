@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\AuroraPatch\AuroraPatch\bin\Release\0Harmony.dll</HintPath>
-    </Reference>
     <Reference Include="AuroraPatch">
       <HintPath>..\AuroraPatch\AuroraPatch\bin\Release\AuroraPatch.exe</HintPath>
     </Reference>
