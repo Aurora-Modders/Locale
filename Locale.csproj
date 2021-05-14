@@ -31,8 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.0.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AuroraPatch\AuroraPatch\bin\Release\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="AuroraPatch">
       <HintPath>..\AuroraPatch\AuroraPatch\bin\Release\AuroraPatch.exe</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
