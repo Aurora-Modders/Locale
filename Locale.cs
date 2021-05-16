@@ -128,10 +128,11 @@ namespace Locale
         /// <param name="__result"></param>
         private static void DateTimeToStringPostfix(DateTime __instance, ref string __result, string format)
         {
-            if (DateTimeFormat != null && format != "F" && Hooking != __instance)
+            if (DateTimeFormat != null && Hooking != __instance)
             {
                 Hooking = __instance;
-                __result = __instance.ToString(DateTimeFormat, CultureInfo.InvariantCulture);
+                if (format != "F") __result = __instance.ToString(DateTimeFormat, CultureInfo.InvariantCulture);
+                else __result = __instance.ToString(DateTimeFormat + " HH:mm:ss", CultureInfo.InvariantCulture);
                 Hooking = null;
             }
         }
